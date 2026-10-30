@@ -439,6 +439,89 @@ textarea{resize:vertical;min-height:44px}
 
 /* 녹산초 포용형 연구학교 회의 자료 */
 .nk-wrap{max-width:1120px;margin:25px auto;padding:0 18px}.nk-panel{background:#fff;border:1px solid #d9e7ed;border-radius:18px;padding:23px;margin:16px 0;box-shadow:0 5px 24px #123b6109}.nk-panel h3{margin:0 0 11px;color:#163f60;font-size:22px}.nk-panel h4{margin:12px 0 7px}.nk-lead{font-size:19px;font-weight:800;color:#124e62}.nk-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.nk-tile{background:#f3f8fb;border:1px solid #e1eaf0;border-radius:14px;padding:17px}.nk-tile b{display:block;color:#155579}.nk-note{font-size:13px;color:#596a75}.nk-table{width:100%;border-collapse:collapse;font-size:14px}.nk-table th,.nk-table td{border:1px solid #dce5ea;padding:11px;vertical-align:top;text-align:left}.nk-table th{background:#eaf3f6}.nk-pill{display:inline-block;border-radius:40px;padding:3px 10px;background:#e6f3ec;color:#175c44;font-size:12px;font-weight:800}.nk-draw{max-width:100%;height:auto;border-radius:16px;background:#f6faff}.nk-bars{display:grid;gap:11px}.nk-bar{display:grid;grid-template-columns:135px 1fr 48px;gap:9px;align-items:center;font-size:14px}.nk-bar i{height:17px;background:#e6ebef;border-radius:20px;overflow:hidden;display:block}.nk-bar em{height:100%;display:block;background:#0e8c8b;border-radius:20px}.nk-scenarios{display:flex;flex-wrap:wrap;gap:7px;margin:10px 0}.nk-scenarios button{border:1px solid #9ac6d4;background:#edf7fa;color:#13465d;border-radius:10px;padding:8px 13px;font-weight:800;cursor:pointer}.nk-scenarios button[aria-pressed=true]{background:#124f70;color:#fff}.nk-vote{width:100%;border:1px solid #cbdce5;border-radius:10px;padding:8px;margin-top:8px;background:white}.nk-explore{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.nk-figure{background:#f2f6fa;border-radius:13px;padding:12px;text-align:center}.nk-figure img{width:100%;max-height:230px;object-fit:contain;border-radius:9px}.nk-notice{border-left:5px solid #e6a74d;background:#fff8e8;padding:13px 17px;border-radius:9px}.nk-source a{word-break:break-all}.nk-mini{font-size:13px}.nk-hero{background:linear-gradient(130deg,#143c59,#107b7a);color:white;border-radius:17px;padding:24px}.nk-hero p,.nk-hero h3{color:white!important}.nk-footer{margin:30px 0}.nk-mobile{overflow:auto}@media(max-width:760px){.nk-grid,.nk-explore{grid-template-columns:1fr}.nk-panel{padding:16px}.nk-bar{grid-template-columns:90px 1fr 38px;font-size:12px}}@media print{.nk-scenarios button,.nk-vote{display:none}.nk-panel{break-inside:avoid;box-shadow:none}}
+
+/* Mobile UX v4: optimized navigation, reading, forms, and touch targets */
+html{scroll-padding-top:85px}
+button,a,input,select,textarea{touch-action:manipulation}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #e8a23f;outline-offset:2px}
+.mobile-tools{display:none}
+.p2-bar{gap:8px}
+.nk-table-scroll{scrollbar-width:thin}
+#docwrap{scroll-margin-top:16px}
+@media(max-width:780px){
+ body{overflow-x:hidden}
+ .app-top{position:sticky;top:0}
+ .app-top .in{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;padding:9px 12px}
+ .app-top h1{min-width:0;font-size:14px;line-height:1.4}
+ .app-top h1 small{font-size:10px;line-height:1.45}
+ .tabs{display:grid;grid-template-columns:1fr 1fr;gap:6px;width:100%}
+ .tab{border-radius:10px;padding:11px 5px;font-size:13px;min-height:44px}
+ .subnav{position:static!important;box-shadow:none}
+ .subnav .in{gap:8px;padding:10px 12px;max-width:100%;scrollbar-width:thin}
+ .subnav a{font-size:12px;min-height:40px;display:inline-flex;align-items:center;padding:6px 12px;flex-shrink:0}
+ .p1-intro{padding:20px 13px}
+ .p1-intro h2{font-size:25px;line-height:1.3}
+ .p1-intro p{font-size:14px}
+ .toc-grid{grid-template-columns:1fr 1fr;gap:8px}
+ .toc-grid a{grid-template-columns:24px 1fr;padding:10px 8px}
+ .toc-grid b{font-size:15px}
+ .toc-grid span{font-size:12px;line-height:1.4}
+ .toc-grid small{display:none}
+ .chap-head{padding:20px 15px 12px}
+ .chap-title{font-size:23px}
+ .chap-body .sa .wrap,.chap-body .sb .container{padding-left:14px;padding-right:14px}
+ .chap-body .sa section,.chap-body .sb section{padding-top:26px;padding-bottom:14px}
+ .sa h1,.sb h1{font-size:29px}
+ .sa h2,.sb h2{font-size:24px}
+ .sa .fact-strip,.sa .def-grid{gap:8px}
+ .sa .card,.sb .card,.sa .def-card{padding:13px}
+ .sa .hero{padding:18px 0}
+ .sa .hero-grid{gap:15px}
+ .sa .hero-sub,.sb .lead{font-size:16px}
+ .sa .fact{padding:11px}
+ .sb .flow{gap:8px}
+ .nk-panel{margin:12px 8px;padding:14px;border-radius:12px}
+ .nk-grid,.nk-explore{grid-template-columns:1fr!important}
+ .nk-hero{padding:17px}
+ .nk-bar{grid-template-columns:80px minmax(0,1fr) 37px}
+ .nk-filters{display:flex;gap:6px;overflow-x:auto;flex-wrap:nowrap;scrollbar-width:thin;padding-bottom:7px}
+ .nk-filters button{white-space:nowrap;flex:none;min-height:43px}
+ .nk-scenarios button{min-height:44px}
+ .nk-table-scroll{overflow-x:auto;overscroll-behavior-inline:contain;-webkit-overflow-scrolling:touch}
+ .nk-table-scroll table{min-width:590px}
+ .p2-head{padding:18px 14px}
+ .p2-head h2{font-size:22px}
+ .p2-head p{font-size:13px}
+ .p2-bar{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ .p2-bar .btn{font-size:12px;padding:9px 5px;white-space:normal;min-height:44px;line-height:1.35}
+ .prog{grid-column:1 / -1;margin-left:0;text-align:center}
+ .p2-grid{padding:12px 10px 88px;gap:15px}
+ .p2-left .blk,.p2-left .infobox{padding:12px}
+ .secnav{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:thin;padding-bottom:8px}
+ .secnav a{white-space:nowrap;flex-shrink:0;padding:9px 12px;min-height:40px}
+ .opt .row{gap:7px;padding:11px 8px}
+ .opt .tt{font-size:13.5px}
+ .opt .prev{padding-left:12px;padding-right:12px}
+ .more{min-height:36px}
+ .infogrid{grid-template-columns:1fr}
+ textarea,input[type=text]{font-size:16px}
+ .docbar{position:static;gap:8px;font-size:12px}
+ #doc{padding:14px;font-size:13.5px;overflow-wrap:anywhere}
+ #doc table{display:block;overflow-x:auto;white-space:normal;font-size:12px}
+ #doc h2{font-size:16px}
+ .mobile-jump{position:fixed;bottom:calc(env(safe-area-inset-bottom,0px) + 14px);right:12px;left:auto;display:inline-flex;align-items:center;justify-content:center;min-height:47px;box-shadow:0 3px 16px #10283a38;z-index:105;font-size:13px}
+ .mobile-tools{display:flex;position:fixed;bottom:calc(env(safe-area-inset-bottom,0px) + 14px);left:12px;z-index:106;gap:6px}
+ .mobile-tools button{border:1px solid #d7e3e8;background:#fff;color:#153d55;border-radius:999px;padding:11px 13px;min-height:46px;box-shadow:0 3px 16px #10283a27;font-size:13px;font-weight:800}
+ #view1 .sa table{display:block;overflow:auto}
+ .sa .stepper{gap:6px}
+ .sa .step-btn{padding:10px 9px}
+ .sa .step-btn b{font-size:14px}
+ .sa .quiz-grid{gap:8px}
+ .sb .tablewrap{overflow-x:auto}
+ .sb .tablewrap table{min-width:570px}
+}
+@media(max-width:390px){.toc-grid{grid-template-columns:1fr 1fr}.p1-intro h2{font-size:22px}.tab{font-size:12px}}
+@media print{.mobile-tools,.mobile-jump{display:none!important}}
 </style>
 <style>
 html{scroll-padding-top:118px}.nk-quick,.nk-filters{display:flex;gap:8px;flex-wrap:wrap;padding:10px 0}.nk-quick a,.nk-filters button{border:1px solid #b4d5d5;background:#fff;color:#174c55;border-radius:18px;padding:7px 12px;text-decoration:none;font:inherit;font-size:13px;cursor:pointer}.nk-filters button[aria-pressed="true"]{background:#0e6b6a;color:#fff}.nk-mini-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:11px}.nk-mini-grid article{background:#f4f9fb;border:1px solid #d7e9ea;border-radius:12px;padding:15px}.nk-mini-grid p{font-size:14px}.nk-panel{max-width:1060px;margin:22px auto;padding:22px;border:1px solid #dbe3ea;background:white;border-radius:16px;scroll-margin-top:120px}.nk-outside{padding:24px}.nk-tiny{font-size:13px;color:#52677a}.nk-meeting-score{display:flex;flex-wrap:wrap;gap:10px}.nk-meeting-score label{display:flex;align-items:center;gap:4px;font-size:13px}.nk-meeting-score select{padding:5px}.nk-table-scroll{overflow-x:auto}.nk-table-scroll table{min-width:650px;width:100%;border-collapse:collapse}.nk-table-scroll td,.nk-table-scroll th{border:1px solid #dbe3ea;padding:8px}.legacy-intro-fold{margin:8px auto 24px;padding:12px;border:1px solid #dbe3ea;border-radius:12px;background:#fff}.legacy-intro-fold summary{cursor:pointer;font-weight:700}.legacy-intro-title{font-size:clamp(24px,3vw,36px)!important}.nk-panel details{margin:9px 0;border:1px solid #dbe3ea;border-radius:9px;padding:9px}.nk-panel summary{cursor:pointer;font-weight:700}[data-fact-review="true"]{text-decoration:underline dotted #c58938;text-underline-offset:3px}@media(max-width:780px){.subnav{position:static!important}.nk-panel{margin:14px 10px;padding:14px}.nk-table-scroll{overflow-x:auto}}@media print{.nk-quick,.nk-filters,.nk-meeting-score,.nk-outside{display:none!important}.nk-panel{break-inside:auto}.legacy-intro-fold:not([open]){display:none!important}#view2{display:none!important}body.print-doc #view2{display:block!important}body.print-doc #view1,body.print-doc .nk-outside{display:none!important}}
@@ -1705,5 +1788,20 @@ q('#copyPlainHwp')?.addEventListener('click',async()=>{const t=q('#doc').innerTe
 // Back to top
 const b=document.createElement('button');b.textContent='↑ 맨 위';b.type='button';b.className='nk-top';b.style.cssText='position:fixed;right:14px;bottom:76px;z-index:155;border:0;border-radius:25px;background:#0e6b6a;color:white;padding:10px 15px;cursor:pointer';b.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));document.body.appendChild(b);
 })();
-</script></body>
+</script><script>
+(function(){
+  const tools=document.createElement('div');tools.className='mobile-tools';tools.setAttribute('aria-label','휴대폰 바로가기');
+  tools.innerHTML='<button type="button" id="mobileTop" aria-label="맨 위로 이동">↑ 맨 위로</button>';
+  document.body.appendChild(tools);
+  const top=tools.querySelector('#mobileTop');
+  top.addEventListener('click',()=>window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'}));
+  const jump=document.querySelector('.mobile-jump');
+  function sync(){const isTwo=!document.querySelector('#view2').hidden;tools.hidden=false;if(jump)jump.style.display=(isTwo&&matchMedia('(max-width:980px)').matches)?'inline-flex':'none'}
+  document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>setTimeout(sync,0)));
+  window.addEventListener('resize',sync);setTimeout(sync,100);
+  // Maintain proper focus after switching between learning material and form builder.
+  document.querySelectorAll('.tab').forEach(btn=>btn.addEventListener('click',()=>{if(window.innerWidth<780){window.scrollTo({top:0,behavior:'instant'});}}));
+})();
+</script>
+</body>
 </html>
