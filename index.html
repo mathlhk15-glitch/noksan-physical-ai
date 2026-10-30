@@ -525,6 +525,20 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
 </style>
 <style>
 html{scroll-padding-top:118px}.nk-quick,.nk-filters{display:flex;gap:8px;flex-wrap:wrap;padding:10px 0}.nk-quick a,.nk-filters button{border:1px solid #b4d5d5;background:#fff;color:#174c55;border-radius:18px;padding:7px 12px;text-decoration:none;font:inherit;font-size:13px;cursor:pointer}.nk-filters button[aria-pressed="true"]{background:#0e6b6a;color:#fff}.nk-mini-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:11px}.nk-mini-grid article{background:#f4f9fb;border:1px solid #d7e9ea;border-radius:12px;padding:15px}.nk-mini-grid p{font-size:14px}.nk-panel{max-width:1060px;margin:22px auto;padding:22px;border:1px solid #dbe3ea;background:white;border-radius:16px;scroll-margin-top:120px}.nk-outside{padding:24px}.nk-tiny{font-size:13px;color:#52677a}.nk-meeting-score{display:flex;flex-wrap:wrap;gap:10px}.nk-meeting-score label{display:flex;align-items:center;gap:4px;font-size:13px}.nk-meeting-score select{padding:5px}.nk-table-scroll{overflow-x:auto}.nk-table-scroll table{min-width:650px;width:100%;border-collapse:collapse}.nk-table-scroll td,.nk-table-scroll th{border:1px solid #dbe3ea;padding:8px}.legacy-intro-fold{margin:8px auto 24px;padding:12px;border:1px solid #dbe3ea;border-radius:12px;background:#fff}.legacy-intro-fold summary{cursor:pointer;font-weight:700}.legacy-intro-title{font-size:clamp(24px,3vw,36px)!important}.nk-panel details{margin:9px 0;border:1px solid #dbe3ea;border-radius:9px;padding:9px}.nk-panel summary{cursor:pointer;font-weight:700}[data-fact-review="true"]{text-decoration:underline dotted #c58938;text-underline-offset:3px}@media(max-width:780px){.subnav{position:static!important}.nk-panel{margin:14px 10px;padding:14px}.nk-table-scroll{overflow-x:auto}}@media print{.nk-quick,.nk-filters,.nk-meeting-score,.nk-outside{display:none!important}.nk-panel{break-inside:auto}.legacy-intro-fold:not([open]){display:none!important}#view2{display:none!important}body.print-doc #view2{display:block!important}body.print-doc #view1,body.print-doc .nk-outside{display:none!important}}
+</style><style id="github-quicklinks-style">
+.github-links{background:#edf7f7;border-bottom:1px solid #cfe5e3;padding:16px 18px}
+.github-links-inner{max-width:1240px;margin:0 auto}
+.github-links-head{font-size:15px;font-weight:900;color:#16475d;margin:0 0 10px}
+.github-links-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}
+.github-link{display:flex;align-items:center;gap:12px;padding:14px 15px;text-decoration:none;border:1px solid #cbdde1;border-radius:14px;background:white;color:#183d55;box-shadow:0 2px 9px #10283a0d;min-height:82px;transition:transform .15s,border-color .15s}
+.github-link:hover{transform:translateY(-2px);border-color:#0f8782}
+.github-link:focus-visible{outline:3px solid #f4ac3b;outline-offset:2px}
+.github-link .gl-icon{font-size:29px;flex:0 0 auto;line-height:1}
+.github-link strong{display:block;font-size:16px;line-height:1.35}
+.github-link small{display:block;color:#607581;font-size:12px;margin-top:4px;line-height:1.4}
+.github-link .gl-arrow{margin-left:auto;font-size:19px;color:#0c7d78}
+@media(max-width:800px){.github-links{padding:12px}.github-links-grid{grid-template-columns:1fr}.github-link{min-height:69px;padding:10px 13px}.github-link strong{font-size:15px}.github-link .gl-icon{font-size:26px}}
+@media print{.github-links{display:none!important}}
 </style></head>
 <body>
 <header class="app-top"><div class="in">
@@ -534,6 +548,13 @@ html{scroll-padding-top:118px}.nk-quick,.nk-filters{display:flex;gap:8px;flex-wr
 <button aria-selected="false" class="tab" data-view="2" id="tab2" role="tab">2부 · 신청서 만들기</button>
 </div>
 </div></header>
+<section class="github-links" aria-label="빠른 자료 바로가기"><div class="github-links-inner">
+<p class="github-links-head">📚 필요한 자료부터 바로 열어보세요</p>
+<div class="github-links-grid">
+<a class="github-link" href="physical-ai-infographic.png" target="_blank" rel="noopener" aria-label="피지컬 AI 쉽게 이해하기 인포그래픽 열기 (새 탭)"><span class="gl-icon" aria-hidden="true">🎨</span><span><strong>그림으로 쉽게 이해하기</strong><small>피지컬 AI 한눈에 보기 · 인포그래픽 PNG</small></span><span class="gl-arrow" aria-hidden="true">↗</span></a>
+<a class="github-link" href="meeting-summary.html" aria-label="교직원 회의용 A4 한 장 요약 열기"><span class="gl-icon" aria-hidden="true">📄</span><span><strong>회의용 한 장 요약</strong><small>연구 주제·운영안·회의 결정사항 · 인쇄 가능</small></span><span class="gl-arrow" aria-hidden="true">→</span></a>
+<a class="github-link" href="#noksan-inclusive" aria-label="상세 자료와 신청서 작성 시작"><span class="gl-icon" aria-hidden="true">🧩</span><span><strong>상세 자료·신청서 만들기</strong><small>18개 프로그램과 연구계획서 작성</small></span><span class="gl-arrow" aria-hidden="true">↓</span></a>
+</div></div></section>
 <!-- ================= 1부 ================= -->
 <div id="view1">
 <nav aria-label="1부 목차" class="subnav"><div class="in"><a href="#noksan-inclusive">시작 · 녹산초 맞춤형</a><a href="#ch1">1. 피지컬 AI란?</a><a href="#ch2">2. 이건 피지컬 AI일까?</a><a href="#ch3">3. 어떻게 작동할까?</a><a href="#ch4">4. 우리 주변의 피지컬 AI</a><a href="#ch5">5. 교육 정책</a><a href="#ch6">6. 학교 적용 사례</a><a href="#ch7">7. 초등 수업 설계</a><a href="#ch8">8. 교구 고르기</a><a href="#ch9">9. 조심할 점</a><a href="#ch10">10. 어린이에게 이렇게 말해요</a><a href="#ch11">11. 연구학교 준비 참고</a><a href="#ch12">12. 출처</a></div></nav>
